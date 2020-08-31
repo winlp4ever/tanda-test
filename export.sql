@@ -7,6 +7,6 @@ inner join question
 on question.id = question_answer_temp.question_id
 inner join answer_temp 
 on answer_temp.id = question_answer_temp.answer_temp_id
-where source_type not like '%google%'
+where source_type like '%webpage-wikipedia%'
 order by qid 
 limit 1000;
